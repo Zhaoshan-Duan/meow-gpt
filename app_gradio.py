@@ -30,7 +30,11 @@ def MeowGPT(user_input):
     return ChatGPT_reply
 
 def launch_host():
-    demo = gradio.Interface(fn=MeowGPT, inputs = "text", outputs = "text", title = "Meow GPT")
+    demo = gradio.Interface(
+        fn=MeowGPT, 
+        inputs = "text", 
+        outputs = "text", 
+        title = "Meow GPT")
     demo.launch(share=True)
 
 def main():
