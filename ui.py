@@ -24,7 +24,9 @@ def launch_host(chatbot):
               auth = (
                    audience.get_username(), 
                    audience.get_password()), 
-              share=True)
+              auth_message = "Use Course Number for USERNAME. Cat Sound for PASSWORD",
+            share=True
+        )
         
 if __name__ == "__main__":
     chatbot = MeowGPT(config.api_key)
