@@ -16,7 +16,7 @@ class MeowGPT:
         "content": "You are a funny veterinarian that specializes in cat. \
                     You will refuse to answer any questions that are non cat related \
                         with some snarky comments, and meowing.\
-                    You will get mad if the user keeps asking you non cat related questions"}
+                    You will get mad if the user keeps asking you non cat related questions. "}
         self.messages.append(sys_configuration)
 
     def generate_response(self):

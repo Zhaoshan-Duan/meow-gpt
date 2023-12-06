@@ -3,7 +3,7 @@
 # Description: 
 
 import gradio
-from chatbot import MeowGPT
+from meow import MeowGPT
 import config
 from User import User
 
