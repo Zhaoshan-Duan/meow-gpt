@@ -2,9 +2,9 @@ import openai
 
 class MeowGPT:
     def __init__(self, api_key):
-        openai.api_key = api_key
         self.messages = []
         self.openai_model = "gpt-3.5-turbo"
+        openai.api_key = api_key
 
     def set_up_chat(self):
         sys_configuration = \

@@ -1,20 +1,24 @@
 import streamlit as st
-import config
 from chatbot import MeowGPT
-import time
+import openai
 
 def set_up_ui():
     with st.sidebar:
         st.title("Meow GPT 😺")
         st.header("Pursonalized Assitant designed to answer cat-related questions.")
         st.subheader("Powered by ChatGPT")
-        st.success("Connected!") 
+        st.success("Connected!")
+
+def read_api_key():
+    return st.secrets['OPENAI_API_KEY']
+    # st.success('API key provided', icon = '✅')
 
 def app():
     set_up_ui()
 
     # Create an instance of the Chat bot
-    chatbot = MeowGPT(config.api_key)
+
+    chatbot = MeowGPT(read_api_key())
 
     if "messages" not in st.session_state:
         st.session_state.messages = chatbot.messages
