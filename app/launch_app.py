@@ -1,6 +1,5 @@
 import streamlit as st
 from chatbot import MeowGPT
-import openai
 
 def set_up_ui():
     with st.sidebar:
