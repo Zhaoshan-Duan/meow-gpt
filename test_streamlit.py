@@ -1,7 +1,8 @@
 import streamlit as st
 
-with st.chat_message("user"):
-    st.write("hi")
+def main():
+    with st.chat_message("user"):
+        st.write("hi")
 
 # with st.sidebar:
 #     st.title('🤖💬 OpenAI Chatbot')
@@ -29,3 +30,6 @@ with st.chat_message("user"):
 #             message_placeholder.markdown(full_response + "▌")
 #         message_placeholder.markdown(full_response)
 #     st.session_state.messages.append({"role": "assistant", "content": full_response})
+
+if __name__ == "__main__":
+    main()
