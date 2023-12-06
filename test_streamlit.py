@@ -1,6 +1,4 @@
 import streamlit as st
-import openai
-import config
 
 with st.chat_message("user"):
     st.write("hi")
