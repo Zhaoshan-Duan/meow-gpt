@@ -1,3 +1,7 @@
+# Name: Zhaoshan Duan
+# Date: 12/6/2023
+# Class: CS 5001
+# Description: This file authenticates users using streamlit's authentication object
 import pickle
 from pathlib import Path
 import streamlit_authenticator as stauth

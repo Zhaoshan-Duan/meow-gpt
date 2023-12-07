@@ -1,3 +1,7 @@
+# Name: Zhaoshan Duan
+# Date: 12/6/2023
+# Class: CS 5001
+# Description: This class encapsulates ChatGPT model settings
 import openai
 
 class MeowGPT:
@@ -32,8 +36,6 @@ class MeowGPT:
             stream=True
         ):
             full_response += response.choices[0].delta.get("content", "")
-
-
         return full_response
     
     def add_assistant_message(self, response):

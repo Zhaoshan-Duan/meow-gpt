@@ -1,4 +1,7 @@
-# Create pick file 
+# Name: Zhaoshan Duan
+# Date: 12/6/2023
+# Class: CS 5001
+# Description: This file creates users with usernames and passwords
 import pickle
 from pathlib import Path
 import streamlit_authenticator as stauth
