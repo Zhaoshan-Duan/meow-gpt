@@ -3,9 +3,10 @@ import pickle
 from pathlib import Path
 import streamlit_authenticator as stauth
 
+
 names = ["Zhaoshan Duan", "Sofia Erech"]
 usernames = ["jojo", "erech"]
-passwords = ["5001", "oni_salem"]
+passwords = ["5001", "my_love"]
 
 # stauth.Hasher use bcrypt
 hashed_password = stauth.Hasher(passwords).generate()
