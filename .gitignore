@@ -1,3 +1,4 @@
 app/config.py
 __pycache__
 app/.streamlit
+app/generate_keys.py
