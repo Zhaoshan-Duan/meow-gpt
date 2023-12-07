@@ -69,7 +69,7 @@ def app(username, authenticator):
             if not message["role"] == "system":
                 st.markdown(message["content"])
             else:
-                st.write("Hello👋")
+                st.write("Hello👋 5001 Class")
 
     # React to user input
     if prompt := st.chat_input("Ask a cat-related question..."):
