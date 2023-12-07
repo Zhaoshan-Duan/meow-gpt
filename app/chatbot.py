@@ -5,12 +5,21 @@
 import openai
 
 class MeowGPT:
+    '''
+        MeowGPT class
+    '''
     def __init__(self, api_key):
+        '''
+            Constructor
+        '''
         self.messages = []
         self.openai_model = "gpt-3.5-turbo"
         openai.api_key = api_key
 
     def set_up_chat(self):
+        '''
+            Set system configuration
+        '''
         sys_configuration = \
         {"role": "system", 
         "content": "You are a funny veterinarian that specializes in cat. \
@@ -22,9 +31,15 @@ class MeowGPT:
         self.messages.append(sys_configuration)
 
     def add_user_message(self, content):
+        ''' 
+            Append user message to chat history
+        '''
         self.messages.append({"role": "user", "content": content})
 
     def generate_assistant_response(self):
+        '''
+            Generate assistant response from OpenAI API
+        '''
         full_response = ""
 
         for response in openai.ChatCompletion.create(
@@ -39,4 +54,7 @@ class MeowGPT:
         return full_response
     
     def add_assistant_message(self, response):
+        '''
+            Append assistange message to chat history
+        '''
         self.messages.append({"role": "assistant", "content": response})
