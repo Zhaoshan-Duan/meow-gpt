@@ -28,6 +28,7 @@ Main Program
 ![Main Page](main_program.png)
 
 Asking chatbot non cat related questions
+
 ![Result](result0.png)
 
 ## Code Design Process
