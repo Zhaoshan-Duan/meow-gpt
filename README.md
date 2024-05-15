@@ -14,9 +14,9 @@ with provided credentials. The application is hosted on Streamlit community clou
 Login Form
 - Accepts credentials that are generated from `generate_key.py`
 - Reject incorrect credentials
-![[login_snapshot0.png]]
+![Log in](login_snapshot0.png)
 
-![[login_snapshot1.png]]
+![Log in Error](login_snapshot1.png)
 
 Main Program
 - Display currently connected username
@@ -25,10 +25,10 @@ Main Program
 - Chatbot will not answer user’s questions if they are non cat related
 - User can log out the program
 
-![[main_program.png]]
+![Main Page](main_program.png)
 
 Asking chatbot non cat related questions
-![[result0.png]]
+![Result](result0.png)
 
 ## Code Design Process
 The project was based on a pet project I was doing to test out OpenAI API and Gradio when
