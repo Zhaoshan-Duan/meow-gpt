@@ -32,11 +32,6 @@ Asking chatbot non cat related questions
 ![Result](result0.png)
 
 ## Code Design Process
-The project was based on a pet project I was doing to test out OpenAI API and Gradio when
-following a youtube tutorial. During development, I felt that the Gradio framework lacked the
-functionalities to mimic a conversational chatbot. Therefore, I switched to Streamlit. The code is
-available on github and hosted the application using Streamlit community cloud.
-
 The program uses launch_app.py to control flow: user_authetnication() calls
 check_authentication_status() and calls app() if the user is authenticated. app() then calls
 set_up_ui() to set up UI elements such as sidebar, and instantiate a chatbot instance
